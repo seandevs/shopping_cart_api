@@ -26,8 +26,8 @@ post '/cart' do
   cart.items.to_json
 end
 
-# $ curl --location --request PATCH 'localhost:4567/cart/1?soda=1'
-patch '/cart/:id' do # put/patch
+# $ curl --location --request PUT 'localhost:4567/cart/1?soda=1'
+put '/cart/:id' do # put/patch
   id = params['id']
   cart = db.data[id.to_i]
 
