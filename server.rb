@@ -4,6 +4,7 @@
 require 'sinatra'
 require_relative './db'
 
+# create a new instance of the database
 db = DB.new
 
 # $ curl --location --request GET 'localhost:4567/'
@@ -35,7 +36,7 @@ patch '/cart/:id' do
   hotdogs = params['hotdogs'].to_i
   mustard = params['mustard'].to_i
 
-  cart.items[:soda] += soda # adds the value to the existing quantity
+  cart.items[:soda] += soda # add the value to the existing quantity
   cart.items[:milk] += milk
   cart.items[:hotdogs] += hotdogs
   cart.items[:mustard] += mustard
