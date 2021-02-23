@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
 
 require 'sinatra'
 require_relative './db'
@@ -21,7 +22,7 @@ end
 post '/cart' do
   cart = Cart.new
   db.data << cart
-  "new cart id: #{db.data.length()}"
+  "new cart id: #{db.data.length}"
 end
 
 # $ curl --location --request PATCH 'localhost:4567/cart/1?soda=1'
@@ -44,8 +45,7 @@ end
 # $ curl --location --request DELETE 'localhost:4567/cart/1'
 delete '/cart/:id' do
   id = params['id'].to_i
-  cart = db.data[id]
 
   db.data.delete_at(id)
-  "cart wth id: #{id} is deleted. The DB now has #{db.data.length()} records."
+  "cart wth id: #{id} is deleted. The DB now has #{db.data.length} records."
 end
