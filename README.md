@@ -1,5 +1,5 @@
 # Shopping Cart API
-This is an toy API for example purposes built on Sinatra <http://sinatrarb.com/intro.html>. The API simulates a shopping cart where the user can create a new shopping cart, get the items in a shopping cart by id, update items in a shopping cart and delete a shopping cart.
+This is a toy API for example purposes built on Sinatra <http://sinatrarb.com/intro.html>. The API simulates a shopping cart where the user can create a new shopping cart, get the items in a shopping cart by id, update items in a shopping cart and delete a shopping cart.
 
 ## Installation
 Clone this repo to your development enviroment.
