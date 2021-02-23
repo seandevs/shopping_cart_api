@@ -21,7 +21,7 @@ $ bundle install
 
 Start the sinatra server.
 ```
-$ ./server.rb # or ruby server.rb
+$ ./lib/server.rb # or ruby /lib/server.rb
 ```
 
 You can access the url through the browser by going to <localhost:4567> or you can make requests using the below. Note that there is no error handling in this code so act responsibily.
