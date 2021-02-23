@@ -24,8 +24,8 @@ post '/cart' do
   "new cart id: #{db.data.length()}"
 end
 
-# $ curl --location --request PUT 'localhost:4567/cart/1?soda=1'
-put '/cart/:id' do
+# $ curl --location --request PATCH 'localhost:4567/cart/1?soda=1'
+patch '/cart/:id' do
   id = params['id']
   cart = db.data[id.to_i]
 
