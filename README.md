@@ -2,11 +2,15 @@
 This is an toy API for example purposes built on Sinatra <http://sinatrarb.com/intro.html>. The API simulates a shopping cart where the user can create a new shopping cart, get the items in a shopping cart by id, update items in a shopping cart and delete a shopping cart.
 
 ## Installation
-Clone this repo to your development enviroment.
-`$ git clone https://github.com/seandevs/shopping_cart_api.git`
+Clone this repo to your development enviroment.  
+```
+$ git clone https://github.com/seandevs/shopping_cart_api.git
+```
 
 Move into the directory.
-`$ cd shopping_cart_api`
+```
+$ cd shopping_cart_api``
+```
 
 Install the required gems.
 ```
