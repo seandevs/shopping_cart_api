@@ -48,6 +48,5 @@ end
 # $ curl --location --request DELETE 'localhost:4567/cart/1'
 delete '/cart/:id' do
   id = params['id'].to_i
-
   db.data.delete(id)
 end
