@@ -3,7 +3,7 @@ This is an toy API for example purposes built on Sinatra <http://sinatrarb.com/i
 
 ## Installation
 Clone this repo to your development enviroment.
-`$ git clone git@github.com:seandevs/shopping_cart_api.git`
+`$ git clone https://github.com/seandevs/shopping_cart_api.git`
 
 Move into the directory.
 `$ cd shopping_cart_api`
