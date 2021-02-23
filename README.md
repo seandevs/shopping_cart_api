@@ -50,7 +50,7 @@ $ curl --location --request DELETE 'localhost:4567/cart/#{id}'
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/seandevs/shopping_cart_api. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/seandevs/shopping_cart_api/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/seandevs/shopping_cart_api. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/seandevs/shopping_cart_api/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -58,5 +58,5 @@ This code is available as open source under the terms of the [MIT License](https
 
 ## Code of Conduct
 
-Everyone interacting in the Scheduler project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/seandevs/shopping_cart_api/CODE_OF_CONDUCT.md).
+Everyone interacting in the Scheduler project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/seandevs/shopping_cart_api/blob/main/CODE_OF_CONDUCT.md).
 
