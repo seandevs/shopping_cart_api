@@ -16,14 +16,14 @@ end
 get '/cart/:id' do
   id = params['id'].to_i
   cart = db.data[id]
-  "Cart with id #{id} has #{cart.items}.\n"
+  cart.items.to_json
 end
 
 # $ curl --location --request POST 'localhost:4567/cart'
 post '/cart' do
   cart = Cart.new
   db.data << cart
-  "New cart with id #{db.data.length} has #{cart.items}.\n"
+  cart.items.to_json
 end
 
 # $ curl --location --request PATCH 'localhost:4567/cart/1?soda=1'
@@ -41,6 +41,7 @@ patch '/cart/:id' do # put/patch
   cart.items[:hotdogs] += hotdogs
   cart.items[:mustard] += mustard
   "Cart with id #{id} has #{cart.items}.\n"
+  cart.items.to_json
 end
 
 # $ curl --location --request DELETE 'localhost:4567/cart/1'
@@ -48,5 +49,4 @@ delete '/cart/:id' do
   id = params['id'].to_i
 
   db.data.delete_at(id)
-  "Cart wth id #{id} is deleted. The DB now has #{db.data.length} records.\n"
 end
