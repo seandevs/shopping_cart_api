@@ -37,7 +37,7 @@ $ curl --location --request GET 'localhost:4567/cart/#{id}'
 # POST a new cart
 $ curl --location --request POST 'localhost:4567/cart'
 
-# PATCH (update) a cart by item 
+# PUT/PATCH (update) a cart by item 
 * replace #{id} with an integer value representeting index
 * replace #{item} with the name of an item e.g "soda", "milk", "hotdogs", "mustard"
 * replace #{quantity} with an integer value
