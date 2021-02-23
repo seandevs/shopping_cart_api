@@ -9,7 +9,7 @@ $ git clone https://github.com/seandevs/shopping_cart_api.git
 
 Move into the directory.
 ```
-$ cd shopping_cart_api``
+$ cd shopping_cart_api
 ```
 
 Install the required gems.
