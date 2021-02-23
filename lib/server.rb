@@ -21,8 +21,9 @@ end
 
 # $ curl --location --request POST 'localhost:4567/cart'
 post '/cart' do
+  index = db.data.keys.last + 1
   cart = Cart.new
-  db.data << cart
+  db.data[index] = cart
   cart.items.to_json
 end
 
@@ -48,5 +49,5 @@ end
 delete '/cart/:id' do
   id = params['id'].to_i
 
-  db.data.delete_at(id)
+  db.data.delete(id)
 end
