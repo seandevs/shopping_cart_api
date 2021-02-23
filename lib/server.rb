@@ -41,7 +41,7 @@ put '/cart/:id' do # put/patch
   cart.items[:milk] += milk
   cart.items[:hotdogs] += hotdogs
   cart.items[:mustard] += mustard
-  "Cart with id #{id} has #{cart.items}.\n"
+
   cart.items.to_json
 end
 
